@@ -35,7 +35,8 @@ app.on('ready', function () {
 
     var mainWindow = createWindow('main', {
         width: 1000,
-        height: 600
+        height: 600,
+        frame: false
     });
 
     mainWindow.loadURL('file://' + __dirname + '/app.html');
