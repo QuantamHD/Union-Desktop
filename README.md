@@ -1,7 +1,7 @@
 Union Desktop
 ==============
 
-#summary
+#Summary
 Union is a free SMS desktop client that runs on Mac, Windows, and Linux that will always
 be open source, and free. It is developed using node.js, and electron, and has a required
 companion android application.
