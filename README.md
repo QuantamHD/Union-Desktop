@@ -131,3 +131,4 @@ All packaging actions are handled by [electron-builder](https://github.com/elect
 **Note:** There are various icons and bitmap files in `resources` directory. Those are used in installers and intended to be replaced by your own graphics.
 
 # License
+This software is licensed under GNU Public License version 3.
