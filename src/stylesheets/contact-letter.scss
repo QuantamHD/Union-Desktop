@@ -1,0 +1,18 @@
+.contact-first-letter{
+    display: flex;
+    height: 56px;
+    width: 56px;
+    border-radius: 50px;
+    background-color: #0097A7;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    -webkit-user-select: none;
+    cursor: default;
+
+    .first-letter{
+        font-size: 40px;
+        font-weight: 400;
+        color: white;
+    }
+}

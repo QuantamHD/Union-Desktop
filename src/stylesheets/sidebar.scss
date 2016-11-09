@@ -1,0 +1,57 @@
+.container{
+    display: block;
+    .sidebar{
+        height: 100vh;
+        width: 25%;
+        max-width: 400px;
+        min-width: 325px;
+        background-color:white;
+        float: left;
+        clear:left;
+        overflow: auto;
+
+        ul{
+            list-style: none;
+            font-family: 'Roboto', sans-serif;
+            .contact{
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 16px;
+                display: flex;
+                flex-direction: row;
+                background-color: white;
+                transition:all 0.2s ease;
+                -webkit-user-select: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #EEEEEE;
+                }
+                &:active {
+                    background-color: #E0E0E0;
+                    transition:all 0.1s ease;
+                }
+
+                .contact-info{
+                    margin-left: 16px;
+                    margin-right: 16px;
+
+                    .from-contact{
+                        font-size: 18px;
+                        color: rgba(0,0,0,0.87);
+                    }
+                    .last-message{
+                        font-size: 13px;
+                        font-weight: 300;
+                        color: #616161;
+                    }
+                    .last-time{
+                        font-size: 13px;
+                        font-weight: 300;
+                        color: #616161;
+                    }
+                }
+            }
+        }
+    }
+}
