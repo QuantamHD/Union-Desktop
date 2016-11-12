@@ -55,5 +55,7 @@
     "source-map-support": "^0.4.6",
     "spectron": "^3.4.0",
     "yargs": "^6.3.0"
+  },
+  "dependencies": {
   }
 }

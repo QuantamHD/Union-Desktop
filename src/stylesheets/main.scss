@@ -1,3 +1,5 @@
+@import "constants/constants.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -17,9 +19,11 @@ body{
 
 .container{
     display: block;
+    height: calc(100% - #{$message-bar-height});
+    overflow: hidden;
     
     .conversation-pane{
-        height: 100vh;
+        height: 100%;
         background-color: #F5F5F5;
         overflow: hidden;
         transition:all 0.2s ease;
@@ -36,14 +40,10 @@ body{
                 margin-bottom: 16px;
             }
         }
-    }
-
-    
+    } 
 }
 
-@import "sidebar.scss";
-@import "scrollbar.scss";
-@import "contact-letter.scss";
-@import "message-you.scss";
-@import "message-them.scss";
-@import "app-bar.scss";
+@import "content/content.scss";
+@import "scrollbar/scrollbar.scss";
+@import "header/header.scss";
+@import "icons/contact-letter.scss";

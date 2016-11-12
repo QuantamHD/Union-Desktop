@@ -1,0 +1,35 @@
+@import "../constants/constants.scss";
+@import '../lib/palette/palette.scss';
+
+.header{
+    height: $message-bar-height;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 1px 15px -1px rgba(0,0,0,0.47);
+    position: relative;
+
+    .title-bar{
+        height: $title-bar-height;
+        background-color: #1976D2;
+        -webkit-app-region: drag;
+    }
+
+    .app-bar{
+        height: $app-bar-height;
+        background-color: #2196F3;
+        display: flex;
+        align-items: center;
+
+        img{
+            margin-left: 24px;
+        }
+
+        .title{
+            margin-left: 40px;
+            font-family: $font-stack;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+}
