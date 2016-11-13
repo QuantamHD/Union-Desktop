@@ -38,6 +38,8 @@ body{
             .message-body{
                 width: 100%;
                 margin-bottom: 16px;
+                display: flex;
+                flex-direction: row-reverse;
             }
         }
     } 

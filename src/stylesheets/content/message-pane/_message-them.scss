@@ -11,7 +11,8 @@
         font-size: 18px;
 
         .messages{
-            display: block;
+            display: flex;
+            flex-direction: column;
 
             .text-message:nth-child(1){
                 border-bottom-left-radius: 4px;
@@ -50,6 +51,7 @@
             background-color: #0097A7;
             color: white;
             padding: 12px;
+            display: inline-block;
             border-radius: 4px;
             min-height: 30px;
             max-width: 25vw;
