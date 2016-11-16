@@ -12,6 +12,24 @@
         height: $title-bar-height;
         background-color: #1976D2;
         -webkit-app-region: drag;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        .window-operations{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+            .click{
+                height: 20px;
+                -webkit-app-region: no-drag;
+                padding: 3px;
+                border-radius: 30px;
+                margin-right: 8px;
+            }
+        }
     }
 
     .app-bar{
@@ -21,11 +39,14 @@
         align-items: center;
 
         img{
-            margin-left: 24px;
+            margin-left: 14px;
+            padding: 10px;
+            border-radius: 30px;
+            height: 30px;
         }
 
         .title{
-            margin-left: 40px;
+            margin-left: 25px;
             font-family: $font-stack;
             font-size: 20px;
             font-weight: 500;
