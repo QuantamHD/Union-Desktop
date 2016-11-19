@@ -2,39 +2,33 @@
     .you{
         float: right;
         padding-right: 16px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        display: flex;
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        font-size: 18px;
+
+        .messages{
+            .text-message:nth-child(1){
+                border-top-right-radius: 0px;
+                border-top-left-radius: 4px;
+                .triangle{                    
+                    top:0;
+                    right:-15px;
+                    border-top: 15px solid white;
+                    border-right: 15px solid transparent;
+                }
+            }
+
+            .text-message:last-child{
+                .time{
+                    font-size: 12px;
+                    color: rgba(0,0,0,0.57);
+                }
+            }
+        }
 
         .text-message{
             margin-right: 16px;
             background-color: white;
-            color: rgba(0,0,0,0.87);
-            padding: 12px;
-            border-bottom-left-radius: 2px;
-            border-top-left-radius: 2px;
-            border-bottom-right-radius: 2px;
-            max-width: 25vw;
-            position: relative;
-            display: inline-block;
-            .triangle{
-                position: absolute;
-                width: 0;
-                height: 0;
-                top:0;
-                right:-15px;
-                border-top: 15px solid white;
-                border-right: 15px solid transparent;
-            }
-            .time{
-                margin-top: 8px;
-                font-size: 12px;
-                color: #616161;
-                font-weight: 300;
-            }
+            color: rgba(0,0,0,0.87); 
+               
         }
     }
 }
+

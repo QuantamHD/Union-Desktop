@@ -17,6 +17,14 @@ body{
     background-color: white;
 }
 
+[contenteditable]:empty:not(:focus):before{
+    content: attr(data-placeholder);
+    color: rgba(0,0,0,0.57);
+    cursor: text;
+}
+
+
+
 .container{
     display: block;
     height: calc(100% - #{$message-bar-height});
@@ -33,13 +41,13 @@ body{
             height: 100%;
             opacity: 1;
             overflow-x: hidden;
-            overflow-y: auto;
+            overflow-y: overlay;
+            display: flex;
+            flex-direction: column-reverse;
 
             .message-body{
                 width: 100%;
                 margin-bottom: 16px;
-                display: flex;
-                flex-direction: row-reverse;
             }
         }
     } 

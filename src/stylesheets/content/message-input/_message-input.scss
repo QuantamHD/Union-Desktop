@@ -1,0 +1,61 @@
+.conversation-pane{
+    display: flex;
+    flex-direction: column;
+    
+    .message-input{
+        
+        width: 100%;
+        box-shadow: 0px 1px 11px -1px rgba(0, 0, 0, 0.47);
+        flex-shrink: 0;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(0,0,0,0.87);
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 16px;
+        padding-top: 8px;
+        
+        font-size: 18px;
+
+        .entry{
+            margin-right: 16px;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .textarea{
+                position: relative;
+
+                .input-entry{
+                margin-right: 16px;
+                min-width: 15vw;
+                outline: none;
+                background-color: white;
+                margin-bottom: 20px;
+                
+
+                padding-top: 12px;
+                padding-left: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+
+                display: inline-block;
+                border-radius: 4px;
+                min-height: 30px;
+                max-width: 35vw;
+                position: relative;
+                }
+
+                .triangle{
+                    border-top: 15px solid white;
+                    border-right: 15px solid transparent;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    top: 0;
+                    right: 2px;
+                }
+            }   
+        } 
+
+        
+    }
+}
