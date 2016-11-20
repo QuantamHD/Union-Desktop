@@ -5,15 +5,25 @@
 import os from 'os'; // native node.js module
 import { remote } from 'electron'; // native electron module
 import jetpack from 'fs-jetpack'; // module loaded from npm
-import { greet } from './hello_world/hello_world'; // code authored by you in this project
 import env from './env';
-import jQuery from 'jquery';
+import Union from './union/union.js';
+import UnionServer from './union/unionServer/unionServer.js';
 
 
+var jQuery = require('jquery');
+//
+jQuery(document).ready(function(){
+    var $body = jQuery('body');
+    var unionPane = new Union($body);
+    var server = new UnionServer();
 
-console.log('Loaded environment variables:', env);
+    for(var i = 0; i < 100; i++){
+        server.sendMessage(i + "", "topic");
+    }
 
-var app = remote.app;
-var appDir = jetpack.cwd(app.getAppPath());
+    
 
-console.log(jQuery('body'));
+});
+
+ 
+ 
