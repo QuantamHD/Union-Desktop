@@ -6,6 +6,7 @@ var _messageArrivedFunctions = undefined;
 var _onDisconnectFunctions = undefined;
 var _delayedTask = undefined;
 var _isConnected = false;
+var _interval = undefined;
 
 export default class {
     constructor(){
@@ -93,6 +94,10 @@ function _onConnect(){
         _onConnectionFunctions[i]();
     }
     _completeDelayedTasks();
+    if(_interval !== undefined){
+        clearInterval(_interval);
+        _interval = undefined;
+    }
 }
 
 function _onConnectionLost(responseObject){
@@ -117,6 +122,12 @@ function _createClient(){
 
 function _reconnect(tries){
     for(var i = tries; i >= 0; i--){
-        _client.connect({onSuccess:_onConnect});
+        _connect();
     }
+
+    _interval = setInterval(_connect, 10000);
+}
+
+function _connect(){
+     _client.connect({onSuccess:_onConnect});
 }
